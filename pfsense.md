@@ -4,7 +4,10 @@
   - Download and install pfSense system <br>
   - Set up 3 network interface cards; WAN, LAN and DMZ <br>
   - Configure each NIC. <br>
+This is a network map of what the network looks like at the end of installation and configuration: <br>
+   <img src="https://i.imgur.com/ndbAJ63.png" height="80%" width="80%" alt="firewall"/> <br>  
 </h2>
+
 
 1. The firewall that I will be using for my SOC would be the open-source firewall and router: pfSense. Downloaded it from the website.
 
@@ -93,3 +96,16 @@
 17. Create rule to allow access from DMZ to any that is not LAN.
 
    <img src="https://i.imgur.com/59HvpmW.png" height="60%" width="60%" alt="firewall"/>
+
+18. I installed pfblockerng mainly for its DNSBL (DNS Block List), to block known malicious websites; System > Package Manager > Package Installer
+
+   <img src="https://i.imgur.com/KSzxmIX.png" height="40%" width="50%" alt="firewall"/>
+
+19. Firewall > pfblockerng > enable > enable DNSBL (DNS block list) > unbound mode > source definitions https://github.com/StevenBlack/hosts > force update > run to apply changes
+
+   <img src="https://i.imgur.com/GB8VFec.png" height="40%" width="40%" alt="firewall"/>
+   <img src="https://i.imgur.com/uUfmFiM.png" height="40%" width="40%" alt="firewall"/>
+
+20. When trying to access a website that is blocked, user will be met with this alert
+
+   <img src="https://i.imgur.com/CJgBh86.png" height="30%" width="60%" alt="firewall"/>
