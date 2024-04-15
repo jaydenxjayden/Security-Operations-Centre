@@ -1,4 +1,3 @@
-![image](https://github.com/jaydenxjayden/Security-Operations-Centre/assets/142165332/f987bf9d-2869-4da4-b63a-9dc23677bfcb)<h2>Work in Progress... :construction_worker:</h2>
 <h2>
   Objectives: <br>
   - Download and install pfSense system <br>
