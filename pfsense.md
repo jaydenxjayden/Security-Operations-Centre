@@ -4,9 +4,10 @@
   - Download and install pfSense system <br>
   - Set up 3 network interface cards; WAN, LAN and DMZ <br>
   - Configure each NIC. <br>
+</h2>
+
 This is a network map of what the network looks like at the end of installation and configuration: <br>
    <img src="https://i.imgur.com/ndbAJ63.png" height="80%" width="80%" alt="firewall"/> <br>  
-</h2>
 
 
 1. The firewall that I will be using for my SOC would be the open-source firewall and router: pfSense. Downloaded it from the website.
