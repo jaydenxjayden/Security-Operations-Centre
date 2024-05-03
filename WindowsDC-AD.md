@@ -120,14 +120,9 @@ This is a network map of what the network looks like at the end of installation 
    <img src="https://i.imgur.com/UAvSY6d.png" height="40%" width="40%" alt="DCAD"/>
    <img src="https://i.imgur.com/EOLnckx.png" height="40%" width="40%" alt="DCAD"/>
 
-21. Add 'soc1' as the user to be affected by the new GPO 'FrontDesk'.
-
-   <img src="https://i.imgur.com/44qunuh.png" height="50%" width="50%" alt="DCAD"/>
-
-22. I added a new forest and named the root domain 'mydomain.local'.
-
-   <img src="https://i.imgur.com/0s6xwnw.png" height="40%" width="40%" alt="DCAD"/>
-   <img src="https://i.imgur.com/l37E5oi.png" height="60%" width="60%" alt="DCAD"/>
-      
+21. Test if events do get logged by creating a new user and checking if its logged in security log. It works!
+    
+   <img src="https://i.imgur.com/flS53YD.png" height="40%" width="40%" alt="DCAD"/>
+   <img src="https://i.imgur.com/AWhoBWQ.png" height="40%" width="40%" alt="DCAD"/>
    
 
