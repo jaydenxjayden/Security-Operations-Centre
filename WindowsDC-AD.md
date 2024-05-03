@@ -1,7 +1,5 @@
 <h1>Domain Controller & Active Directory</h1>
 
-<h2>Work in Progress... :construction_worker:</h2>
-
 <h2>
   Objectives: <br>
   - Download and install Windows Server 2016 <br>
