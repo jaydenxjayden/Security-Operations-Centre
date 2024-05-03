@@ -30,16 +30,53 @@ This is a network map of what the network looks like at the end of installation 
 
 4. Proceed to install Active Directory Domain Service. Server Manger > Manage > add roles and features > ADDS > Add feature.
 
-   <img src="https://i.imgur.com/aTjrQxL.png" height="40%" width="60%" alt="DCAD"/>
-   <img src="https://i.imgur.com/U15DMGc.png" height="40%" width="30%" alt="DCAD"/>
+   <img src="https://i.imgur.com/Zpg0Vr4.png" height="70%" width="70%" alt="DCAD"/>
+   <img src="https://i.imgur.com/ol4I2t5.png" height="30%" width="30%" alt="DCAD"/>
 
-1. After downloading and installing the Windows 2016 Server VM, I placed it into the LAN segment in VM settings.
+5. Installed the service with default configurations and promote the server to a DC. 
 
-   <img src="https://i.imgur.com/aTjrQxL.png" height="20%" width="20%" alt="DCAD"/>
-   <img src="https://i.imgur.com/U15DMGc.png" height="53%" width="53%" alt="DCAD"/>
+   <img src="https://i.imgur.com/0s6xwnw.png" height="40%" width="40%" alt="DCAD"/>
+   <img src="https://i.imgur.com/l37E5oi.png" height="60%" width="60%" alt="DCAD"/>
    
-1. After downloading and installing the Windows 2016 Server VM, I placed it into the LAN segment in VM settings.
+6. I added a new forest and named the root domain 'mydomain.local'.
 
-   <img src="https://i.imgur.com/aTjrQxL.png" height="20%" width="20%" alt="DCAD"/>
-   <img src="https://i.imgur.com/U15DMGc.png" height="53%" width="53%" alt="DCAD"/>
+   <img src="https://i.imgur.com/5HKtWxt.png" height="40%" width="40%" alt="DCAD"/>
          
+7. Setting passwords and configurations for new domain.
+
+   <img src="https://i.imgur.com/2p3ICvu.png" height="40%" width="40%" alt="DCAD"/>
+   <img src="https://i.imgur.com/pWGd8He.png" height="40%" width="40%" alt="DCAD"/>
+
+8. Complete the pre-requisite checks and install. Ensure that 'workgroup' has changed to 'mydomain.local'.
+
+   <img src="https://i.imgur.com/KZ1ZjFP.png" height="40%" width="40%" alt="DCAD"/>
+   <img src="https://i.imgur.com/K2Coivg.png" height="40%" width="40%" alt="DCAD"/>
+   <img src="https://i.imgur.com/j6Y9zFf.png" height="40%" width="40%" alt="DCAD"/>
+
+9. Aside from promoting it to DC, I also installed the DHCP server, to make the DC the DHCP of the LAN segment.
+
+   <img src="https://i.imgur.com/qyDvlUM.png" height="40%" width="60%" alt="DCAD"/>
+   <img src="https://i.imgur.com/muyQp0P.png" height="40%" width="60%" alt="DCAD"/>
+         
+10. After making the DC the DHCP server, we put in place some rules so that certain IP addresses are reserved.
+
+   <img src="https://i.imgur.com/NYZGr4q.png" height="60%" width="60%" alt="DCAD"/>
+   <img src="https://i.imgur.com/KN212G2.png" height="40%" width="40%" alt="DCAD"/>
+   <img src="https://i.imgur.com/eRRbBiQ.png" height="40%" width="40%" alt="DCAD"/>
+   <img src="https://i.imgur.com/u09UXhV.png" height="40%" width="40%" alt="DCAD"/>
+   <img src="https://i.imgur.com/Lj62gIK.png" height="40%" width="40%" alt="DCAD"/>
+   <img src="https://i.imgur.com/abw5lAE.png" height="40%" width="40%" alt="DCAD"/>
+
+11. I placed my kali VM into the LAN segment to verify. It was assigned the IP 172.16.50.51!
+
+   <img src="https://i.imgur.com/Ur4a3SX.png" height="80%" width="80%" alt="DCAD"/>
+
+12. I moved my Win10 VM into the new domain, and set the DNS server of Win10 to DC.
+
+   <img src="https://i.imgur.com/phyNYNT.png" height="60%" width="60%" alt="DCAD"/>
+         
+13. Change the workgroup of the Win10 to mydomain.local, key in the credentials and restart the VM.
+
+   <img src="https://i.imgur.com/GVxOtmu.png" height="60%" width="60%" alt="DCAD"/>
+   <img src="https://i.imgur.com/J5rzxoV.png" height="60%" width="60%" alt="DCAD"/>
+
