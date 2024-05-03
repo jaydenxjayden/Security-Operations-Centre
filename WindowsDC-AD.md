@@ -80,3 +80,54 @@ This is a network map of what the network looks like at the end of installation 
    <img src="https://i.imgur.com/GVxOtmu.png" height="60%" width="60%" alt="DCAD"/>
    <img src="https://i.imgur.com/J5rzxoV.png" height="60%" width="60%" alt="DCAD"/>
 
+14. Going back to Server Manager, I proceed to create a Group Policy Object (GPO) under mydomain.local named 'FrontDesk' as an example.
+
+   <img src="https://i.imgur.com/aKGWyXu.png" height="30%" width="30%" alt="DCAD"/>
+   <img src="https://i.imgur.com/4B4UNnK.png" height="30%" width="30%" alt="DCAD"/>
+   <img src="https://i.imgur.com/n1u9BSj.png" height="20%" width="20%" alt="DCAD"/>
+
+15. Creating a user 'soc1' in AD Users and Computers. 
+
+   <img src="https://i.imgur.com/7FVy9y9.png" height="60%" width="60%" alt="DCAD"/>
+   <img src="https://i.imgur.com/9a2gj2H.png" height="40%" width="40%" alt="DCAD"/>
+   <img src="https://i.imgur.com/9aJo3IC.png" height="40%" width="40%" alt="DCAD"/>
+         
+16. Add 'soc1' as the user to be affected by the new GPO 'FrontDesk'.
+
+   <img src="https://i.imgur.com/44qunuh.png" height="50%" width="50%" alt="DCAD"/>
+
+17. Proceed to configure policies that affect 'FrontDesk' GPO by going to Group Policy Management (GPM) editor.
+
+   <img src="https://i.imgur.com/ImnX3U1.png" height="40%" width="60%" alt="DCAD"/>
+   
+18. Restrict the use of command prompt by 'FrontDesk'. Enable the rule.
+
+   <img src="https://i.imgur.com/3nrjWsK.png" height="40%" width="40%" alt="DCAD"/>
+   <img src="https://i.imgur.com/2zfr3yw.png" height="40%" width="40%" alt="DCAD"/>
+   <img src="https://i.imgur.com/ev8Tx0Q.png" height="40%" width="60%" alt="DCAD"/>
+
+19. Login to soc1 user and verify that command prompt is disabled. It works!
+
+   <img src="https://i.imgur.com/D6VWZyg.png" height="40%" width="40%" alt="DCAD"/>
+
+20. Configure audit policies for computer for logging of the following; Account Logon, Account Management, Logon/Logoff, Object Access, Policy Change and System.
+
+   <img src="https://i.imgur.com/YtjZT8L.png" height="60%" width="60%" alt="DCAD"/>
+   <img src="https://i.imgur.com/SS6s0eC.png" height="40%" width="40%" alt="DCAD"/>
+   <img src="https://i.imgur.com/bFuoxSA.png" height="40%" width="40%" alt="DCAD"/>
+   <img src="https://i.imgur.com/RViHjl4.png" height="40%" width="40%" alt="DCAD"/>
+   <img src="https://i.imgur.com/oMzT5pA.png" height="40%" width="40%" alt="DCAD"/>
+   <img src="https://i.imgur.com/UAvSY6d.png" height="40%" width="40%" alt="DCAD"/>
+   <img src="https://i.imgur.com/EOLnckx.png" height="40%" width="40%" alt="DCAD"/>
+
+21. Add 'soc1' as the user to be affected by the new GPO 'FrontDesk'.
+
+   <img src="https://i.imgur.com/44qunuh.png" height="50%" width="50%" alt="DCAD"/>
+
+22. I added a new forest and named the root domain 'mydomain.local'.
+
+   <img src="https://i.imgur.com/0s6xwnw.png" height="40%" width="40%" alt="DCAD"/>
+   <img src="https://i.imgur.com/l37E5oi.png" height="60%" width="60%" alt="DCAD"/>
+      
+   
+
