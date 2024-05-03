@@ -2,7 +2,7 @@
   Objectives: <br>
   - Download and install pfSense system <br>
   - Set up 3 network interface cards; WAN, LAN and DMZ <br>
-  - Configure each NIC. 
+  - Configure each NIC. <br>
   - Implementing an Access Control List (ACL) using Pfblockerng <br>
 </h2>
 
